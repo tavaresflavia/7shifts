@@ -20,10 +20,7 @@ const ShiftsModal = ({handleCancel, handleSave}) => {
                
                <div  className="shift-modal__save"> </div> <Button/>
 
-          
-            <div>
-                <img src={notesSection}/>
-            </div>
+        
             <div>
                 <div className='cancelButtonDiv' onClick={handleCancel}>
                     <Button saveImg={cancelImg}/>
