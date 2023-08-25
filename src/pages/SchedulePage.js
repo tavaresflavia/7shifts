@@ -8,7 +8,15 @@ import ShiftsModal from '../components/ShiftsModal/ShiftsModal';
 
 const SchedulePage = () => {
     const days = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
-    const [modal, setModal ] = useState(true)
+    const [modal, setModal ] = useState(false)
+    const [day, setDay] = useState("Monday")
+
+    const handleClick = (e) => {
+        const newModal = !modal;
+        setModal(newModal);
+        setDay(e.target.id);
+        console.log(e.target.id);
+    }
     return (
         <div>
             <img src = {pageImg} alt="page"/> 
@@ -18,7 +26,7 @@ const SchedulePage = () => {
 
                 </div>
                 {days.map( (el) => {
-                    return (<div className= {"row1__small " + (`row1__small--${el} `)}>
+                    return (<div className= {"row1__small " + (`row1__small--${el} `)} onClick={handleClick} id={el}>
 
                     </div>)})
                 }
