@@ -1,0 +1,65 @@
+
+
+.calendshift{
+    width: 7.375rem;
+    height: 4.6875rem;
+    display: flex;
+
+    &__sideBar{
+        min-width: 1.8125rem;
+        min-height: 100%;
+        background-color:#323232 ;
+        color: #323232;
+    }
+
+    &__main{
+        height: 4.6875rem;
+        background-color: #FEC;
+
+    }
+
+    &__info{
+        padding-block: 10%;
+        background-color: #FEC;
+        font-size: 0.875rem;
+        font-family: 'Proxima Nova';
+        font-weight: 400;
+        display: flex;
+        
+
+    }
+
+    &__points{
+        margin-left:10%;
+        // border: 1px solid red;
+        border-radius: 0.625rem;
+        display: flex;
+        width: 4.5625rem;
+        height: 1rem;
+        padding: 0.25rem 0.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: #FFF9ED;
+        color: #000;
+        font-family: 'Proxima Nova';
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 400;
+
+    }
+
+    &__text{
+        padding-inline: 0.5rem ;
+        max-width: 70% ;
+        width: 70% ;
+        min-width: 70%
+
+    }
+
+    &__img{
+        max-width:0.75rem;
+        max-height: 0.75rem;
+    }
+
+}
