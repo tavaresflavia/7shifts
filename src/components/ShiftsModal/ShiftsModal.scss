@@ -18,3 +18,36 @@
     flex-direction: row; 
 
 }
+
+.saveButton{
+    
+    position: absolute;
+
+    // lefrt:37rem;
+    right: 80px;
+    top: 261px;
+    // top: 
+    // border: 1px solid red;
+    z-index:12;
+
+}
+
+.cancelButtonDiv{
+    /*
+    
+    position: absolute;
+    //top: 170px;
+    // left:37rem;
+    right: -36rem;
+    top: -17rem;
+    */
+    position: absolute;
+
+    // lefrt:37rem;
+    right: 190px;
+    top: 261px;
+    // top: 
+    // border: 1px solid red;
+    z-index:12;
+    
+}

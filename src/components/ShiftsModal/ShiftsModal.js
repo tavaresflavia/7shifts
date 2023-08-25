@@ -7,9 +7,11 @@ import Button from '../Button/Button';
 import modalImg from '../../assets/images/modal.png'
 import saveImg from "../../assest/images/save_button.png"
 import cancelImg from "../../assest/images/cancel_button.png"
+import { Navigate } from 'react-router-dom';
+
+const ShiftsModal = ({handleCancel, handleSave}) => {
 
 
-const ShiftsModal = () => {
     return (
         <div className="shift-modal">
             <img src={modalImg} alt="modal"/>
@@ -23,8 +25,12 @@ const ShiftsModal = () => {
                 <img src={notesSection}/>
             </div>
             <div>
-                <Button saveImg={saveImg}/>
-                <Button saveImg={cancelImg}/>
+                <div className='cancelButtonDiv' onClick={handleCancel}>
+                    <Button saveImg={cancelImg}/>
+                </div>
+                <div className='saveButton' onClick={handleSave}>
+                    <Button saveImg={saveImg}/>
+                </div>
             </div>
 
         </div>
