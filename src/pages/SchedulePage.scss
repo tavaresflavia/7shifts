@@ -1,0 +1,87 @@
+.table {
+    position:absolute;
+    top:409px;
+    z-index:1;
+    left:261px;
+  width: 1400px;
+}
+
+.row1 {
+  display: flex;
+  &__big {
+    color: #000;
+    text-align: right;
+    font-family: Proxima Nova;
+    font-size: 13.724px;
+    font-style: normal;
+    font-weight: 700;
+    border: 0.98px solid #949494;
+    background: #d5d5d5;
+    display: flex;
+    width: 330px;
+    height: 3.8rem;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  &__small {
+    display: flex;
+    width: 7.41rem;
+    height: 3.8rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11.764px;
+    flex-shrink: 0;
+    border: 0.98px solid #949494;
+    background: #d5d5d5;
+    cursor:pointer;
+    &:hover{
+        background-image: url("../assets/images/plusButton.png");
+
+    }
+  }
+}
+
+.row2 {
+  &__big {
+    display: flex;
+    width: 334px;
+    height: 90px;
+    padding: 11.764px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__small {
+    display: flex;
+    width: 120px;
+    height: 67px;
+    padding: 11.764px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11.764px;
+    flex-shrink: 0;
+  }
+}
+
+.role {
+  border: 0.98px solid #555;
+  background: #555;
+  display: flex;
+  width: 1160px;
+  height: 23px;
+  padding: 2px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: right;
+  font-family: Proxima Nova;
+  font-size: 13.724px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

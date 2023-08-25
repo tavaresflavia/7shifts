@@ -1,0 +1,32 @@
+.nav{
+  display: flex;
+  flex-direction: column;
+  width:15rem;
+
+  //   &__dashboard{
+  // //  background-image: url("../../assets/images/dashboard.png");
+  // //  height: 30px;
+    
+  //   }
+    &__schedule-default{
+    cursor:pointer;
+
+    } 
+  
+    &__team-default{
+    cursor:pointer;
+
+  } 
+  //   }
+  //   &__hiring{
+  //   // background-image: url("../../assets/images/");  
+  //   }
+  //   &__bottom{
+  //     //background-image: url("../../assets/images/"); 
+  //   }
+
+}
+
+.hidden{
+  display:none;
+}
