@@ -4,10 +4,11 @@ import breaksSection from '../../assest/images/breaks_section.png';
 import notesSection from "../../assest/images/notesSection.png"
 import './ShiftsModal.scss';
 import Button from '../Button/Button';
+// import modalImg from '../../assest/images/modal'
 
 const ShiftsModal = () => {
     return (
-        <div>
+        <div className="shift-modal">
             <div>
                 <img src={topSection}/>
             </div>

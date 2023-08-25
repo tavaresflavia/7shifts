@@ -1,9 +1,10 @@
-// import OpenShifts from '../components/OpenShifts/OpenShifts';
+import OpenShifts from '../components/OpenShifts/OpenShifts';
 import './SchedulePage.scss';
 // import NavBar from '../components/NavBar/NavBar'
 import pageImg from'../assets/images/schedule-page.png'
 // import plusButton from '../assets/images/plusButton.png'
 import { useState } from 'react';
+import ShiftsModal from '../components/ShiftsModal/ShiftsModal';
 
 const SchedulePage = () => {
     const days = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
@@ -22,7 +23,7 @@ const SchedulePage = () => {
                     </div>)})
                 }
 
-                {modal && <OpenShifts/>}
+                { modal && <ShiftsModal/>}
                
 
                 </div>

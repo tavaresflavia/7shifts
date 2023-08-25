@@ -1,6 +1,11 @@
+.shift-modal{
+    z-index:10;
+    position: absolute;
 
+}
 
 .rewardsContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+
 }

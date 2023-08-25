@@ -12,7 +12,7 @@ function App() {
       {/* <Header /> */}
       <Routes>
         {/* <Route path="/" element = {<HomePage/>}/> */}
-        <Route path="/" element = {<ShiftsModal/>}/>
+        <Route path="/" element = {<SchedulePage/>}/>
       
         {/* <Route path="*" element = {<NotFound/>} /> */}
         </Routes>
