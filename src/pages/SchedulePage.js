@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const SchedulePage = () => {
     const days = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
-    const [modal, setModal ] = useState("")
+    const [modal, setModal ] = useState(true)
     return (
         <div>
             <img src = {pageImg} alt="page"/> 
@@ -21,6 +21,8 @@ const SchedulePage = () => {
 
                     </div>)})
                 }
+
+                {modal && <OpenShifts/>}
                
 
                 </div>
@@ -39,6 +41,7 @@ const SchedulePage = () => {
 
                 </div>
             </div>
+       
         </div>
     );
 };

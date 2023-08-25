@@ -1,0 +1,33 @@
+
+
+.dropDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 11rem;
+
+    &__heading{
+        display: flex;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: #464646;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+
+    }
+
+    &__label{
+
+    }
+
+    &__value{
+        padding-left: 1rem;
+        padding-block: 0.3rem
+
+    }
+
+}
