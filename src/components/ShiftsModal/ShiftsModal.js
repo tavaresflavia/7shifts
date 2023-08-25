@@ -5,6 +5,9 @@ import notesSection from "../../assest/images/notesSection.png"
 import './ShiftsModal.scss';
 import Button from '../Button/Button';
 import modalImg from '../../assets/images/modal.png'
+import saveImg from "../../assest/images/save_button.png"
+import cancelImg from "../../assest/images/cancel_button.png"
+
 
 const ShiftsModal = () => {
     return (
@@ -15,6 +18,14 @@ const ShiftsModal = () => {
                
                <div  className="shift-modal__save"> </div> <Button/>
 
+          
+            <div>
+                <img src={notesSection}/>
+            </div>
+            <div>
+                <Button saveImg={saveImg}/>
+                <Button saveImg={cancelImg}/>
+            </div>
 
         </div>
     );

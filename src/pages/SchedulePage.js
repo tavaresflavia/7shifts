@@ -12,8 +12,7 @@ const SchedulePage = () => {
     const [day, setDay] = useState("Monday")
 
     const handleClick = (e) => {
-        const newModal = !modal;
-        setModal(newModal);
+        setModal(true);
         setDay(e.target.id);
         console.log(e.target.id);
     }

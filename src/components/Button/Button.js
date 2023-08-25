@@ -1,14 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Button.scss';
+// import saveImg from "../../assest/images/save_button.png"
 
-const Button = () => {
+
+const Button = ({saveImg}) => {
     return (
-        <Link to="/">
-            <div className='button'>
-                SAVE
-            </div>
+        <div>
+            <Link to="/">
+                <img className="saveButton" src={saveImg}></img>
+            </Link>
+            
+        </div>
 
-        </Link>
+    
+        
     );
 };
 

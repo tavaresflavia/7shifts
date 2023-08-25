@@ -1,8 +1,42 @@
 
 
-.button{
-    width: 7.25rem;
-    height: 3.475rem;
-    background-color: alpha($color: #000000);
-    color: white;
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+.buttonContainer{
+    width: 100%;
+    display: flex;
+
+    &__button{
+        width: 7.25rem;
+        height: 3.475rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 4px;
+        color: wheat
+    
+        
+    }
+
+}
+
+.saveButton{
+
+    width: 7.5rem;
+
 }
