@@ -1,10 +1,44 @@
-import OpenShifts from '../components/OpenShifts/OpenShifts';
+// import OpenShifts from '../components/OpenShifts/OpenShifts';
 import './SchedulePage.scss';
+// import NavBar from '../components/NavBar/NavBar'
+import pageImg from'../assets/images/schedule-page.png'
+// import plusButton from '../assets/images/plusButton.png'
+import { useState } from 'react';
 
 const SchedulePage = () => {
+    const days = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
+    const [modal, setModal ] = useState("")
     return (
         <div>
-            <OpenShifts/>
+            <img src = {pageImg} alt="page"/> 
+            <div className= "table" >
+                <div className= "row1">
+                <div className= "row1__big">Open Shifts
+
+                </div>
+                {days.map( (el) => {
+                    return (<div className= {"row1__small " + (`row1__small--${el} `)}>
+
+                    </div>)})
+                }
+               
+
+                </div>
+                <div className='role'>No Role
+
+
+                </div>
+
+                <div className= "row2">
+                <div className= "row2__big">
+
+                </div>
+                <div className= "row2__small">
+
+                </div>
+
+                </div>
+            </div>
         </div>
     );
 };
