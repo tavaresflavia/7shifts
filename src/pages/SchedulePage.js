@@ -5,17 +5,35 @@ import pageImg from'../assets/images/schedule-page.png'
 // import plusButton from '../assets/images/plusButton.png'
 import { useState } from 'react';
 import ShiftsModal from '../components/ShiftsModal/ShiftsModal';
+import CalendarShift from '../components/CalendarShift/CalendarShift';
 
 const SchedulePage = () => {
     const days = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
-    const [modal, setModal ] = useState(false)
-    const [day, setDay] = useState("Monday")
+    const [modal, setModal ] = useState(false);
+    const [day, setDay] = useState("Monday");
+    const [showCalender, setShowCalendar ] = useState(false);
+
 
     const handleClick = (e) => {
         setModal(true);
         setDay(e.target.id);
         console.log(e.target.id);
     }
+
+    const handleSave = () => {
+        setShowCalendar(true);
+        setModal(false);
+
+    }
+
+    const handleCancel= () => {
+        setShowCalendar(true);
+        setModal(false);
+
+    }
+
+
+   
     return (
         <div>
             <img src = {pageImg} alt="page"/> 
@@ -30,7 +48,9 @@ const SchedulePage = () => {
                     </div>)})
                 }
 
-                { modal && <ShiftsModal/>}
+                { modal && <ShiftsModal handleSave={handleSave} handleCancel={handleSave}/>}
+
+                {points && <CalendarShift points={points} shift="9am-5pm" />}
                
 
                 </div>

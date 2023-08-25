@@ -1,4 +1,7 @@
+@use "../styles/partials/typography";
+
 .table {
+    font-family: "Nova";
     position:absolute;
     top:409px;
     z-index:1;

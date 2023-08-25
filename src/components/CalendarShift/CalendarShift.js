@@ -9,11 +9,11 @@ const CalendarShift = ({points, shift}) => {
             <div className='calendshift__sideBar'>.</div>
             <div className='calendshift__main'>
                 <div className='calendshift__info'>
-                    <p className='calendshift__text'>9AM - 5PM</p>
+                    <p className='calendshift__text'>{shift}</p>
                     <img className='calendshift__img' src={pencil}/>
                 </div>
                 <div className='calendshift__points'>
-                + 20 points
+                {points}
                 </div>
             </div>
 
