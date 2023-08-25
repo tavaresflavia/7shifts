@@ -3,20 +3,23 @@ import './Dropdown.scss';
 import { useState } from 'react';
 import arrow from '../../assets/images/arrowdown.svg'
 
-const points = ["10 points", "20 points", "40 points", "50 points"];
+const points = ["5 points", "10 points", "15 points", "20 points"];
 
 
 const Dropdown = () => {
     const [options, setOptions] = useState(false)
-    const [value, setValue ] = useState("Points")
+    const [value, setValue ] = useState("Points");
+    const [focus, setFocus] = useState(false)
 
     const handleOptions = () => {
         setOptions(true);
+        setFocus(true);
     }
 
     const selectOption = (e) =>{
         setOptions(false);
         setValue(e.target.value);
+        setFocus(false);
 
     }
 
@@ -24,7 +27,7 @@ const Dropdown = () => {
         <div className='dropDown'>
             <h3 className='dropDown__heading'>Rewards</h3>
             <div className='dropDown__menu'>
-                <div className="dropDown__value" onClick={handleOptions}> <span className='points'>{value} </span><img src={arrow}/>
+                <div className={"dropDown__value" + (focus? " dropDown__value--focus":"")} onClick={handleOptions}> <span className='points'>{value} </span><img src={arrow}/>
         
                 </div>
              <div className= {"dropDown__options" + (options ? "": " hidden")}> 
